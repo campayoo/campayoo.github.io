@@ -1,11 +1,5 @@
-# 🌐 campayoo.github.io
+# campayoo.github.io
 
-Web personal de **Pablo Campayo Viñes** — estudiante de Desarrollo de Aplicaciones Multiplataforma y técnico en Sistemas Microinformáticos y Redes.
+Código de mi web personal: https://campayoo.github.io
 
-**👉 https://campayoo.github.io**
-
-- Español e inglés (botón ES/EN; detecta el idioma del navegador)
-- HTML, CSS y JavaScript hechos a mano, sin plantillas ni dependencias
-- Adaptada a móvil y con animaciones que respetan "reducir movimiento"
-
-© 2026 Pablo Campayo Viñes. Todos los derechos reservados.
+HTML, CSS y un poco de JavaScript, sin frameworks. Se publica sola con GitHub Pages desde la rama `main`.

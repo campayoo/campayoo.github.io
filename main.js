@@ -22,6 +22,9 @@
   const onScroll = () => bar && bar.classList.toggle('scrolled', scrollY > 8);
   addEventListener('scroll', onScroll, { passive: true }); onScroll();
 
+  /* retraso escalonado para elementos de una misma rejilla */
+  $$('.skills, .edu, .projects, .stats ul, .feat, .big-steps, .timeline, .two').forEach(g => $$(':scope > .rv', g).forEach((el, i) => el.style.setProperty('--d', (i % 6) * 0.09 + 's')));
+
   /* aparición al hacer scroll (y disparadores de animaciones) */
   const io = new IntersectionObserver(es => es.forEach(e => {
     if (!e.isIntersecting) return;
@@ -110,6 +113,24 @@
     };
     addEventListener('scroll', spy, { passive: true }); spy();
   }
+
+  /* barra de progreso, parallax y cinta de tecnologías al ritmo del scroll */
+  const prog = $('.progress'), b1 = $('.hero .b1'), b2 = $('.hero .b2'), code = $('.hero .code'), mq = $('.marquee div');
+  let mqX = 0, lastY = scrollY, vel = 0;
+  function frame() {
+    const max = document.documentElement.scrollHeight - innerHeight;
+    if (prog) prog.style.setProperty('--p', max > 0 ? scrollY / max : 0);
+    if (!calm) {
+      const y = scrollY;
+      if (b1) b1.style.transform = `translateY(${y * .25}px)`;
+      if (b2) b2.style.transform = `translateY(${-y * .15}px)`;
+      if (code) code.style.setProperty('--tilt', Math.max(0, 1 - y / 500).toFixed(3));
+      vel = vel * .9 + (y - lastY) * .1; lastY = y;
+      if (mq) { mqX -= .6 + Math.abs(vel) * .35; const w = mq.scrollWidth / 2; if (-mqX > w) mqX += w; mq.style.transform = `translateX(${mqX}px)`; }
+    }
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
 
   const y = $('#year'); if (y) y.textContent = new Date().getFullYear();
 })();

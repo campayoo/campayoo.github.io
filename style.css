@@ -49,7 +49,7 @@ html[lang="es"] .en,html[lang="en"] .es{display:none!important}
 
 /* ---------- hero ---------- */
 .hero{position:relative;overflow:hidden;padding:clamp(48px,8vw,110px) 0 clamp(60px,8vw,100px)}
-.blob{position:absolute;border-radius:50%;filter:blur(2px);opacity:.55;z-index:0;animation:float 14s ease-in-out infinite}
+.blob{position:absolute;border-radius:50%;filter:blur(40px);opacity:.45;z-index:0;animation:float 14s ease-in-out infinite}
 .blob.b1{width:520px;height:520px;background:radial-gradient(circle at 30% 30%,#ffd36e,#ff8c2a 70%);right:-160px;top:-180px}
 .blob.b2{width:300px;height:300px;background:radial-gradient(circle,#ffc24a,#ffb978 70%);left:-120px;bottom:-140px;animation-delay:-5s}
 .blob.b3{width:180px;height:180px;background:radial-gradient(circle,#ffe6c4,#ffc58f);left:46%;top:10%;animation-delay:-9s;opacity:.7}
@@ -57,8 +57,6 @@ html[lang="es"] .en,html[lang="en"] .es{display:none!important}
 .dots{position:absolute;inset:0;background-image:radial-gradient(#e9cfae 1.3px,transparent 1.4px);background-size:26px 26px;opacity:.6;z-index:0;mask-image:linear-gradient(180deg,#000 40%,transparent)}
 .hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.25fr .9fr;gap:48px;align-items:center}
 .hello{font:800 22px var(--display);color:var(--ink-2);margin-bottom:10px;display:flex;align-items:center;gap:10px}
-.wave{display:inline-block;transform-origin:70% 70%;animation:wave 2.4s ease-in-out 1s 2}
-@keyframes wave{0%,60%,100%{transform:rotate(0)}10%,30%{transform:rotate(14deg)}20%,40%{transform:rotate(-8deg)}}
 .name{font-size:clamp(3.1rem,8.4vw,7rem);font-weight:800;line-height:.92;letter-spacing:-.045em}
 .name span{display:block}
 .name .last{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;padding-bottom:.08em}
@@ -68,8 +66,7 @@ html[lang="es"] .en,html[lang="en"] .es{display:none!important}
 .hero .chips{margin-bottom:28px}
 .ctas{display:flex;flex-wrap:wrap;gap:12px}
 
-.code{position:relative;background:var(--deep);color:#ffe2c0;border-radius:22px;padding:22px 24px 26px;font:500 15px/1.75 var(--mono);box-shadow:0 30px 60px -24px rgba(90,40,0,.55);transform:rotate(2deg);animation:bob 6s ease-in-out infinite}
-@keyframes bob{50%{transform:rotate(2deg) translateY(-10px)}}
+.code{position:relative;background:var(--deep);color:#ffe2c0;border-radius:20px;padding:22px 24px 26px;font:500 15px/1.75 var(--mono);box-shadow:0 30px 60px -24px rgba(90,40,0,.55);transform:perspective(900px) rotateY(calc(var(--tilt,1)*-8deg)) rotateX(calc(var(--tilt,1)*4deg));transition:transform .2s linear}
 .code .dots3{display:flex;gap:7px;margin-bottom:14px}
 .code .dots3 i{width:11px;height:11px;border-radius:50%;background:#ff5f56}
 .code .dots3 i:nth-child(2){background:#ffbd2e}.code .dots3 i:nth-child(3){background:#27c93f}
@@ -77,8 +74,6 @@ html[lang="es"] .en,html[lang="en"] .es{display:none!important}
 .code .k{color:#ff9f5a}.code .s{color:#ffd36e}.code .c{color:#a88a70}
 .caret{display:inline-block;width:.6em;height:1.1em;background:var(--or-2);vertical-align:-.2em;animation:blink 1s steps(1) infinite}
 @keyframes blink{50%{opacity:0}}
-.egg{position:absolute;right:-18px;bottom:-34px;width:78px;height:98px;border-radius:50% 50% 46% 46%/60% 60% 40% 40%;background:radial-gradient(circle at 32% 28%,#fff6 0 14%,transparent 15%),linear-gradient(160deg,#ffb35c,#ff7a1f);box-shadow:inset -8px -10px 0 rgba(0,0,0,.08);animation:hop 3.2s ease-in-out infinite}
-@keyframes hop{0%,100%{transform:translateY(0) rotate(-6deg)}50%{transform:translateY(-16px) rotate(6deg)}}
 
 /* ---------- cifras ---------- */
 .stats{position:relative;z-index:2;margin-top:-28px}
@@ -153,9 +148,9 @@ html[lang="es"] .en,html[lang="en"] .es{display:none!important}
 .s1{background:#ffe1b8}.s2{background:#ffd0c0}.s3{background:#fff0a8}.s4{background:#ffe8d6}.s5{background:#ffd8a0}.s6{background:var(--deep);color:#ffeedd}
 .s6 .chips li{background:#ffffff1a;color:#ffeedd}
 .marquee{overflow:hidden;margin-top:40px;mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
-.marquee div{display:flex;gap:14px;width:max-content;animation:slide 40s linear infinite}
+.marquee div{display:flex;gap:14px;width:max-content;will-change:transform}
 .marquee span{font:800 clamp(1.4rem,3vw,2.2rem) var(--display);color:var(--ink);white-space:nowrap;display:flex;align-items:center;gap:14px}
-.marquee span::after{content:"";width:14px;height:18px;border-radius:50% 50% 46% 46%/60% 60% 40% 40%;background:var(--grad)}
+.marquee span::after{content:"";width:12px;height:12px;border-radius:3px;background:var(--grad);transform:rotate(45deg)}
 @keyframes slide{to{transform:translateX(-50%)}}
 
 /* idiomas y certificados */
@@ -212,10 +207,6 @@ html[lang="es"] .en,html[lang="en"] .es{display:none!important}
 .contact h2{font-size:clamp(2.8rem,8vw,6.4rem);font-weight:800;letter-spacing:-.045em;margin-bottom:18px}
 .contact p{font-size:1.25rem;max-width:44ch;font-weight:600}
 .contact .btn.solid{box-shadow:0 6px 0 #fff}
-.contact .eggs i{position:absolute;width:90px;height:112px;border-radius:50% 50% 46% 46%/60% 60% 40% 40%;background:#fff;opacity:.25;animation:hop 4s ease-in-out infinite}
-.contact .eggs i:nth-child(1){right:8%;top:18%}
-.contact .eggs i:nth-child(2){right:22%;bottom:12%;width:60px;height:74px;animation-delay:-1.5s}
-.contact .eggs i:nth-child(3){right:3%;bottom:-30px;width:140px;height:174px;animation-delay:-2.6s}
 
 footer{background:var(--deep);color:#d9bfa5;padding:28px 0;font-weight:600;font-size:15px}
 footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
@@ -326,9 +317,79 @@ kbd{font:800 14px var(--mono);min-width:34px;height:34px;padding:0 8px;display:i
 }
 @media (max-width:380px){.stats ul{grid-template-columns:1fr 1fr;gap:10px}.stats span{font-size:13px}}
 @media (prefers-reduced-motion:reduce){
+  .progress{display:none}
+  .js .hero .name span,.js .hello,.js .lead,.js .hero .chips,.js .ctas{opacity:1!important;transform:none!important}
   *,*::before,*::after{animation:none!important;transition:none!important}
   .js .rv{opacity:1;transform:none}
   .js .route .trip{stroke-dashoffset:0}.js .route .pin{opacity:1}
   .bars i.f::after{transform:none}
   html{scroll-behavior:auto}
 }
+
+/* ---------- iconos ---------- */
+.i{width:1.1em;height:1.1em;flex:none}
+.chips li{display:inline-flex;align-items:center;gap:7px}
+.chips li .i{color:var(--or)}
+.job .ico{color:var(--or)}
+.job .ico .i{width:22px;height:22px}
+.skill h3 b{width:40px;height:40px;border-radius:12px;background:var(--grad);color:#fff;display:grid;place-items:center;font-size:inherit}
+.skill h3 b .i{width:21px;height:21px}
+.s6 h3 b{background:#ffffff1a;color:var(--amb)}
+.certs b{color:var(--or)}
+.certs b .i{width:22px;height:22px}
+.btn .i{width:19px;height:19px}
+
+/* ---------- aspecto más sobrio ---------- */
+.s1,.s2,.s3,.s4,.s5{background:var(--paper);border:1.5px solid var(--line);box-shadow:var(--shadow)}
+.skill .chips li{background:var(--cream);border:1px solid var(--line);color:var(--ink-2)}
+.blob.b3{display:none}
+.hello{font-size:20px;color:var(--or)}
+
+/* ---------- barra de progreso ---------- */
+.progress{position:fixed;inset:0 0 auto;height:4px;z-index:60;pointer-events:none}
+.progress i{display:block;height:100%;background:var(--grad);transform-origin:left;transform:scaleX(var(--p,0))}
+
+/* ---------- entrada del hero ---------- */
+.js .hero .name span{display:block;opacity:0;transform:translateY(60%);animation:rise .9s cubic-bezier(.2,.8,.2,1) forwards}
+.js .hero .name span:nth-child(2){animation-delay:.12s}
+.js .hello{opacity:0;animation:rise .7s cubic-bezier(.2,.8,.2,1) .05s forwards}
+.js .lead{opacity:0;animation:rise .8s cubic-bezier(.2,.8,.2,1) .35s forwards}
+.js .hero .chips{opacity:0;animation:rise .8s cubic-bezier(.2,.8,.2,1) .5s forwards}
+.js .hero .ctas{opacity:0;animation:rise .8s cubic-bezier(.2,.8,.2,1) .62s forwards}
+.js .hero .code{opacity:0;animation:fadein 1s ease .5s forwards}
+@keyframes rise{to{opacity:1;transform:none}}
+@keyframes fadein{to{opacity:1}}
+
+/* ---------- animaciones de scroll ---------- */
+.js .rv{transition-delay:var(--d,0s)}
+.js .sec-head h2{clip-path:inset(0 0 100% 0);transform:translateY(40%);transition:clip-path .9s cubic-bezier(.2,.8,.2,1) .1s,transform .9s cubic-bezier(.2,.8,.2,1) .1s}
+.js .sec-head.on h2{clip-path:inset(0 0 -10% 0);transform:none}
+.js .sec-head .tag i{transform:scaleX(0);transform-origin:left;transition:transform .7s cubic-bezier(.2,.8,.2,1) .3s}
+.js .sec-head.on .tag i{transform:none}
+.js .skill.rv{transform:perspective(800px) rotateX(18deg) translateY(30px)}
+.js .skill.rv.on{transform:none}
+.js .job.rv{transform:translateX(40px)}
+.js .job.rv.on{transform:none}
+.js .job .ico{transform:scale(0);transition:transform .5s cubic-bezier(.3,1.6,.5,1) .25s}
+.js .job.on .ico{transform:none}
+.js .proj .art img,.js .proj .art svg{transform:scale(1.18);transition:transform 1.4s cubic-bezier(.2,.8,.2,1)}
+.js .proj.on .art img,.js .proj.on .art svg{transform:scale(1)}
+.js .proj.on:hover .art img{transform:scale(1.06)}
+.js .edu .card.rv:nth-child(1){transform:translateX(-40px)}
+.js .edu .card.rv:nth-child(2){transform:translateX(40px)}
+.js .edu .card.rv.on{transform:none}
+.js .route-box.rv{clip-path:inset(0 0 0 0 round 28px);transform:scale(.94)}
+.js .route-box.rv.on{transform:none}
+.js .contact h2.rv{transform:translateY(60px) scale(.96)}
+.js .contact h2.rv.on{transform:none}
+.js .feat .rv{transform:translateY(20px) scale(.97)}
+.js .feat .rv.on{transform:none}
+.js .big-steps .rv{transform:translateY(24px)}
+.js .big-steps .rv.on{transform:none}
+
+/* contacto: anillos en vez de formas decorativas */
+.rings i{position:absolute;right:-120px;top:50%;width:520px;height:520px;margin-top:-260px;border-radius:50%;border:2px solid #fff;opacity:.35;animation:pulse 6s ease-in-out infinite}
+.rings i:nth-child(2){width:380px;height:380px;margin-top:-190px;right:-50px;animation-delay:-2s}
+.rings i:nth-child(3){width:240px;height:240px;margin-top:-120px;right:20px;animation-delay:-4s}
+@keyframes pulse{50%{transform:scale(1.06);opacity:.15}}
+@media (max-width:760px){.rings{display:none}.js .job.rv{transform:translateY(30px)}}

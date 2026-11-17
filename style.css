@@ -28,7 +28,7 @@ html[lang="es"] .en,html[lang="en"] .es{display:none!important}
 .bar.scrolled{border-color:var(--line);box-shadow:0 6px 20px -16px rgba(138,74,18,.5)}
 .bar .wrap{display:flex;align-items:center;gap:22px;min-height:64px}
 .logo{display:flex;align-items:center;gap:10px;font:800 18px var(--display);text-decoration:none}
-.logo i{width:30px;height:36px;border-radius:50% 50% 46% 46%/60% 60% 40% 40%;background:var(--grad);display:block;box-shadow:inset -5px -6px 0 rgba(0,0,0,.08)}
+.logo i{width:38px;height:38px;border-radius:11px;background:var(--ink);display:grid;place-items:center;font:800 16px/1 var(--display);font-style:normal;letter-spacing:-.02em;color:var(--amb);box-shadow:0 4px 0 var(--or)}
 .nav{display:flex;gap:4px;margin-left:auto}
 .nav a{text-decoration:none;font-weight:700;color:var(--ink-2);padding:8px 12px;border-radius:999px;transition:background .2s,color .2s}
 .nav a:hover{background:#fff;color:var(--ink)}

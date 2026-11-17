@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pablo Campayo Viñes · Desarrollador de Aplicaciones Multiplataforma</title>
+<meta name="description" content="Pablo Campayo Viñes: estudiante de DAM y técnico en Sistemas Microinformáticos y Redes. Buscando prácticas Erasmus+. Creador de EGG WARS.">
+<meta name="author" content="Pablo Campayo Viñes">
+<meta name="theme-color" content="#ff8c2a">
+<meta property="og:title" content="Pablo Campayo Viñes · Developer">
+<meta property="og:description" content="Estudiante de DAM · Técnico en Sistemas y Redes · Buscando prácticas Erasmus+">
+<meta property="og:image" content="img/banner.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 40 40%22%3E%3Crect width=%2240%22 height=%2240%22 rx=%2212%22 fill=%22%23ff8c2a%22/%3E%3Ctext x=%2220%22 y=%2228%22 font-family=%22Arial%22 font-weight=%22900%22 font-size=%2220%22 fill=%22white%22 text-anchor=%22middle%22%3EPC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Nunito:wght@500;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">Saltar al contenido</a>
+<div class="progress" aria-hidden="true"><span id="progress"></span></div>
+<div class="cursor-glow" id="glow" aria-hidden="true"></div>
+
+<header class="top" id="top">
+  <a class="logo" href="#inicio" aria-label="Pablo Campayo, inicio"><span class="logo-mark">PC</span><span class="logo-name">Pablo Campayo</span></a>
+  <nav class="nav" id="nav" aria-label="Secciones">
+    <a href="#sobre-mi" data-i18n="nav.about">Sobre mí</a>
+    <a href="#experiencia" data-i18n="nav.exp">Experiencia</a>
+    <a href="#formacion" data-i18n="nav.edu">Formación</a>
+    <a href="#proyectos" data-i18n="nav.proj">Proyectos</a>
+    <a href="#habilidades" data-i18n="nav.skills">Habilidades</a>
+    <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+  </nav>
+  <div class="top-actions">
+    <button class="lang" id="lang" aria-label="Cambiar idioma / Change language"><span data-l="es">ES</span><span data-l="en">EN</span><i></i></button>
+    <button class="burger" id="burger" aria-label="Menú" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+<!-- ================= HERO ================= -->
+<section class="hero" id="inicio">
+  <div class="mesh" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="hero-in">
+    <p class="badge rv"><span class="live"></span><span data-i18n="hero.badge">Buscando prácticas Erasmus+</span></p>
+    <h1 class="rv"><span class="h-small" data-i18n="hero.hi">Hola, soy</span><span class="h-name">Pablo Campayo<br><em>Viñes</em></span></h1>
+    <p class="typed rv" aria-live="polite"><span class="mono">&gt;</span> <span id="typed"></span><span class="caret">▍</span></p>
+    <p class="lead rv" data-i18n="hero.lead">Estudiante de <b>Desarrollo de Aplicaciones Multiplataforma</b> y técnico en <b>Sistemas Microinformáticos y Redes</b>. Me gusta construir cosas que funcionan de verdad: de un servidor de juegos en tiempo real a una web con WordPress.</p>
+    <div class="cta rv">
+      <a class="btn btn-main" href="#proyectos"><span data-i18n="hero.cta1">Ver proyectos</span> <span aria-hidden="true">→</span></a>
+      <a class="btn btn-soft" href="https://github.com/campayoo" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.23 1.88.87 2.34.67.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.66 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 8 0Z"/></svg>GitHub</a>
+    </div>
+    <ul class="facts rv">
+      <li><b>📍</b><span data-i18n="hero.f1">Torrent, Valencia</span></li>
+      <li><b>🎓</b><span data-i18n="hero.f2">DAM · IES Abastos</span></li>
+      <li><b>🗣️</b><span data-i18n="hero.f3">ES · VA · EN B2 · FR A2</span></li>
+    </ul>
+  </div>
+  <div class="hero-card rv" aria-hidden="true">
+    <div class="win"><i></i><i></i><i></i><span>pablo.java</span></div>
+<pre class="codeblock"><code><span class="k">public class</span> <span class="t">Pablo</span> <span class="k">extends</span> <span class="t">Developer</span> {
+  <span class="t">String</span>   formación = <span class="s">"DAM · SMR"</span>;
+  <span class="t">String[]</span> stack     = { <span class="s">"Java"</span>, <span class="s">"JS"</span>,
+                         <span class="s">"SQL"</span>, <span class="s">"Redes"</span> };
+  <span class="t">String[]</span> idiomas   = { <span class="s">"ES"</span>, <span class="s">"VA"</span>,
+                         <span class="s">"EN B2"</span>, <span class="s">"FR A2"</span> };
+
+  <span class="t">void</span> <span class="f">siguientePaso</span>() {
+    <span class="f">buscar</span>(<span class="s">"Prácticas Erasmus+"</span>); <span class="c">// ✈️</span>
+  }
+}</code></pre>
+  </div>
+  <a class="scroll-hint" href="#sobre-mi" aria-label="Bajar"><span></span></a>
+</section>
+
+<!-- ================= SOBRE MÍ ================= -->
+<section class="sec" id="sobre-mi">
+  <div class="sec-grid">
+    <header class="sec-h rv">
+      <span class="eyebrow">01</span>
+      <h2 data-i18n="about.t">Sobre mí</h2>
+    </header>
+    <div class="about">
+      <p class="big rv" data-i18n="about.p1">Mezclo dos mundos: el de los <mark>sistemas y las redes</mark>, donde aprendí a montar, reparar y configurar, y el del <mark>desarrollo de software</mark>, donde ahora aprendo a diseñar y programar aplicaciones completas.</p>
+      <p class="rv" data-i18n="about.p2">Soy motivado, curioso y aprendo rápido. Disfruto resolviendo problemas y trabajando en equipo, y busco unas <b>prácticas Erasmus+</b> donde aplicar lo que sé, ganar experiencia real en un entorno profesional y seguir creciendo como desarrollador.</p>
+      <div class="nums">
+        <div class="rv"><b class="count" data-to="2">2</b><span data-i18n="about.n1">titulaciones de FP (EQF 4 y 5)</span></div>
+        <div class="rv"><b class="count" data-to="3">3</b><span data-i18n="about.n2">experiencias laborales</span></div>
+        <div class="rv"><b class="count" data-to="4">4</b><span data-i18n="about.n3">idiomas</span></div>
+        <div class="rv"><b class="count" data-to="225">225</b><span data-i18n="about.n4">pruebas en mi mayor proyecto</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCIA ================= -->
+<section class="sec sec-alt" id="experiencia">
+  <div class="sec-grid">
+    <header class="sec-h rv">
+      <span class="eyebrow">02</span>
+      <h2 data-i18n="exp.t">Experiencia</h2>
+    </header>
+    <ol class="timeline">
+      <li class="rv">
+        <span class="tl-dot">🇬🇷</span>
+        <div class="tl-card">
+          <div class="tl-top"><h3 data-i18n="exp.1.r">Desarrollador web</h3><time>03/2025 – 04/2025</time></div>
+          <p class="tl-org">CrowdPolicy · <span data-i18n="exp.1.p">Atenas, Grecia</span></p>
+          <ul>
+            <li data-i18n="exp.1.a">Diseñé y desarrollé una web totalmente funcional con <b>WordPress</b>: estructura de contenidos, personalización del tema y configuración de plugins.</li>
+            <li data-i18n="exp.1.b">Desarrollé un <b>chatbot interactivo</b> para automatizar las consultas de los usuarios y mejorar su experiencia.</li>
+          </ul>
+          <p class="tags"><span>WordPress</span><span>Chatbot</span><span>UX</span><span data-i18n="tag.intl">Entorno internacional</span></p>
+        </div>
+      </li>
+      <li class="rv">
+        <span class="tl-dot">🛠️</span>
+        <div class="tl-card">
+          <div class="tl-top"><h3 data-i18n="exp.2.r">Técnico TIC</h3><time>04/2025 – 05/2025</time></div>
+          <p class="tl-org">RS Turia – Recambios y accesorios · Riba-roja de Túria</p>
+          <ul>
+            <li data-i18n="exp.2.a">Mantenimiento <b>preventivo y correctivo</b> de equipos informáticos.</li>
+            <li data-i18n="exp.2.b"><b>Soporte técnico</b> a usuarios y resolución de incidencias.</li>
+            <li data-i18n="exp.2.c">Diseño y desarrollo de una web con <b>WordPress</b>.</li>
+          </ul>
+          <p class="tags"><span>Hardware</span><span data-i18n="tag.support">Soporte</span><span>WordPress</span></p>
+        </div>
+      </li>
+      <li class="rv">
+        <span class="tl-dot">🍔</span>
+        <div class="tl-card">
+          <div class="tl-top"><h3 data-i18n="exp.3.r">Personal de equipo (entrenador)</h3><time data-i18n="exp.3.d">12/2025 – actualidad</time></div>
+          <p class="tl-org">McDonald's A7 · Torrent</p>
+          <ul>
+            <li data-i18n="exp.3.a">Atención al cliente, preparación de pedidos, postres y bebidas, y cuidado del salón.</li>
+            <li data-i18n="exp.3.b">Trabajo en equipo en un entorno de mucho ritmo, priorizando tareas.</li>
+          </ul>
+          <p class="tags"><span data-i18n="tag.team">Trabajo en equipo</span><span data-i18n="tag.client">Atención al cliente</span></p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= FORMACIÓN ================= -->
+<section class="sec" id="formacion">
+  <div class="sec-grid">
+    <header class="sec-h rv">
+      <span class="eyebrow">03</span>
+      <h2 data-i18n="edu.t">Formación</h2>
+    </header>
+    <div class="edu">
+      <article class="ecard ecard-now rv">
+        <div class="e-head"><span class="e-ico">☕</span><div><h3 data-i18n="edu.1.t">CFGS Desarrollo de Aplicaciones Multiplataforma</h3><p>IES Abastos · Valencia · <span data-i18n="edu.1.d">2025 – actualidad</span> · EQF 5</p></div></div>
+        <ul class="pills">
+          <li data-i18n="edu.1.a">Java y POO</li><li data-i18n="edu.1.b">Bases de datos (SQL)</li><li>HTML · CSS · JavaScript</li><li data-i18n="edu.1.c">Apps de escritorio y móviles</li><li data-i18n="edu.1.d2">Interfaces de usuario</li><li data-i18n="edu.1.e">Acceso a datos</li><li>ERP / CRM</li><li data-i18n="edu.1.f">Pruebas y despliegue</li><li data-i18n="edu.1.g">Control de versiones</li>
+        </ul>
+      </article>
+      <article class="ecard rv">
+        <div class="e-head"><span class="e-ico">🖧</span><div><h3 data-i18n="edu.2.t">CFGM Sistemas Microinformáticos y Redes</h3><p>IES Serra Perenxisa · Torrent · 2023 – 2025 · EQF 4</p></div></div>
+        <ul class="pills">
+          <li data-i18n="edu.2.a">Montaje y reparación de hardware</li><li data-i18n="edu.2.b">Windows y Linux</li><li data-i18n="edu.2.c">Redes y resolución de problemas</li><li data-i18n="edu.2.d">Servicios y servidores</li><li data-i18n="edu.2.e">Seguridad informática</li><li data-i18n="edu.2.f">Soporte técnico</li>
+        </ul>
+      </article>
+      <article class="ecard ecard-sm rv">
+        <div class="e-head"><span class="e-ico">📜</span><div><h3>Cisco CCNA 1 · Packet Tracer</h3><p data-i18n="edu.3.d">Cisco Networking Academy</p></div></div>
+      </article>
+      <article class="ecard ecard-sm rv">
+        <div class="e-head"><span class="e-ico">🏫</span><div><h3 data-i18n="edu.4.t">Educación Secundaria Obligatoria</h3><p>IES La Marxadella · Torrent · 2019 – 2023</p></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROYECTOS ================= -->
+<section class="sec sec-dark" id="proyectos">
+  <div class="sec-grid">
+    <header class="sec-h rv">
+      <span class="eyebrow">04</span>
+      <h2 data-i18n="proj.t">Proyectos</h2>
+    </header>
+    <div>
+      <article class="star rv">
+        <div class="star-media">
+          <div class="slides" id="slides">
+            <img src="img/banner.jpg" alt="EGG WARS" class="on" width="1280" height="420">
+            <img src="img/mapa-castle.jpg" alt="EGG WARS · Castle" loading="lazy" width="960" height="570">
+            <img src="img/mapa-moonbase.jpg" alt="EGG WARS · Moonbase" loading="lazy" width="960" height="570">
+            <img src="img/mapa-medina.jpg" alt="EGG WARS · Medina" loading="lazy" width="960" height="570">
+            <img src="img/mapa-temple.jpg" alt="EGG WARS · Templo" loading="lazy" width="960" height="570">
+          </div>
+          <div class="dots" id="dots" role="tablist" aria-label="Imágenes"></div>
+        </div>
+        <div class="star-body">
+          <span class="star-tag" data-i18n="proj.star">⭐ Proyecto estrella</span>
+          <h3>🥚 EGG WARS</h3>
+          <p data-i18n="proj.ew">Shooter 3D multijugador de huevos en el navegador, hecho desde cero. Servidor autoritativo con anti-trampas, bots con A*, cuentas en PostgreSQL y una versión que funciona sin servidor.</p>
+          <ul class="ew-nums">
+            <li><b>16</b><span data-i18n="proj.m">mapas</span></li><li><b>8</b><span data-i18n="proj.w">armas</span></li><li><b>5</b><span data-i18n="proj.md">modos</span></li><li><b>225</b><span data-i18n="proj.ts">pruebas</span></li>
+          </ul>
+          <p class="tags dark"><span>Three.js</span><span>Node.js</span><span>Socket.io</span><span>PostgreSQL</span><span>Render</span></p>
+          <div class="cta">
+            <a class="btn btn-main" href="https://eggwars-plai.onrender.com" target="_blank" rel="noopener" data-i18n="proj.play">▶ Jugar online</a>
+            <a class="btn btn-ghost" href="https://campayoo.github.io/EggWars/" target="_blank" rel="noopener" data-i18n="proj.docs">Guía y documentación</a>
+            <a class="btn btn-ghost" href="https://github.com/campayoo/EggWars" target="_blank" rel="noopener" data-i18n="proj.code">Código</a>
+          </div>
+        </div>
+      </article>
+      <div class="projects">
+        <a class="pcard rv" href="https://github.com/campayoo/ProyectoChampions" target="_blank" rel="noopener">
+          <span class="p-ico">⚽</span><h3>Champions Elite</h3>
+          <p data-i18n="proj.ch">Simulador de la Champions League: equipos, fichajes, alineaciones y eliminatorias, con arquitectura por capas e interfaz gráfica.</p>
+          <p class="tags"><span>Java</span><span>Swing</span><span>JUnit 5</span></p><span class="go">↗</span>
+        </a>
+        <a class="pcard rv" href="https://github.com/campayoo/ProyectoIntermodular" target="_blank" rel="noopener">
+          <span class="p-ico">🌍</span><h3>WORLDGAMES · ODS Hub</h3>
+          <p data-i18n="proj.ods">Plataforma web con minijuegos educativos sobre los Objetivos de Desarrollo Sostenible.</p>
+          <p class="tags"><span>JavaScript</span><span>HTML</span><span>CSS</span></p><span class="go">↗</span>
+        </a>
+        <a class="pcard rv" href="https://github.com/campayoo/JuegoDelTesoro" target="_blank" rel="noopener">
+          <span class="p-ico">🗺️</span><h3 data-i18n="proj.tr.t">Juego del Tesoro</h3>
+          <p data-i18n="proj.tr">Aventura de consola con mapas generados al azar y un camino garantizado hasta el tesoro.</p>
+          <p class="tags"><span>Java</span></p><span class="go">↗</span>
+        </a>
+        <a class="pcard rv" href="https://github.com/campayoo/AhorcadoJugadores" target="_blank" rel="noopener">
+          <span class="p-ico">🔤</span><h3 data-i18n="proj.ah.t">Ahorcado de futbolistas</h3>
+          <p data-i18n="proj.ah">El ahorcado clásico en consola con jugadores históricos del fútbol.</p>
+          <p class="tags"><span>Java</span></p><span class="go">↗</span>
+        </a>
+        <a class="pcard rv" href="https://github.com/campayoo/ArbolNavidad" target="_blank" rel="noopener">
+          <span class="p-ico">🎄</span><h3 data-i18n="proj.ar.t">Árbol de Navidad</h3>
+          <p data-i18n="proj.ar">Árbol interactivo en consola con colores ANSI, luces aleatorias y regalos.</p>
+          <p class="tags"><span>Java</span></p><span class="go">↗</span>
+        </a>
+        <a class="pcard pcard-more rv" href="https://github.com/campayoo?tab=repositories" target="_blank" rel="noopener">
+          <span class="p-ico">➕</span><h3 data-i18n="proj.more.t">Todos mis repositorios</h3>
+          <p data-i18n="proj.more">Prácticas de clase, Git con IntelliJ y más.</p><span class="go">↗</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HABILIDADES ================= -->
+<section class="sec" id="habilidades">
+  <div class="sec-grid">
+    <header class="sec-h rv">
+      <span class="eyebrow">05</span>
+      <h2 data-i18n="sk.t">Habilidades</h2>
+    </header>
+    <div>
+      <div class="skills">
+        <article class="scard rv"><h3>☕ <span data-i18n="sk.1">Programación</span></h3><ul><li>Java</li><li data-i18n="sk.oop">POO</li><li>JavaScript</li><li>TypeScript</li><li>JUnit 5</li><li>Git · GitHub</li></ul></article>
+        <article class="scard rv"><h3>🌐 Web</h3><ul><li>HTML</li><li>CSS</li><li>React · Next.js</li><li>Tailwind</li><li>Node.js</li><li>Three.js</li><li>WordPress</li></ul></article>
+        <article class="scard rv"><h3>🗄️ <span data-i18n="sk.3">Datos</span></h3><ul><li>SQL</li><li>MySQL</li><li>PostgreSQL</li><li data-i18n="sk.db">Diseño de BD</li><li>ERP / CRM</li></ul></article>
+        <article class="scard rv"><h3>🖧 <span data-i18n="sk.4">Sistemas y redes</span></h3><ul><li>Windows</li><li>Linux</li><li data-i18n="sk.hw">Hardware</li><li>Cisco Packet Tracer</li><li>CCNA 1</li><li data-i18n="sk.sec">Seguridad básica</li></ul></article>
+      </div>
+      <div class="soft rv">
+        <h3 data-i18n="sk.soft">Lo que aporto a un equipo</h3>
+        <ul>
+          <li><b>🧩</b><span data-i18n="sk.s1">Resolver problemas</span></li>
+          <li><b>⚡</b><span data-i18n="sk.s2">Aprender rápido</span></li>
+          <li><b>🤝</b><span data-i18n="sk.s3">Trabajo en equipo</span></li>
+          <li><b>🎯</b><span data-i18n="sk.s4">Priorizar tareas</span></li>
+          <li><b>😊</b><span data-i18n="sk.s5">Trato profesional con clientes</span></li>
+          <li><b>🌍</b><span data-i18n="sk.s6">Experiencia internacional</span></li>
+        </ul>
+      </div>
+      <div class="langs rv">
+        <h3 data-i18n="lang.t">Idiomas</h3>
+        <div class="lang-row"><span>🇪🇸 <b data-i18n="lang.es">Español</b></span><div class="cefr" data-lv="7"></div><em data-i18n="lang.native">Nativo</em></div>
+        <div class="lang-row"><span>🟨 <b data-i18n="lang.va">Valenciano</b></span><div class="cefr" data-lv="7"></div><em data-i18n="lang.native2">Nativo</em></div>
+        <div class="lang-row"><span>🇬🇧 <b data-i18n="lang.en">Inglés</b></span><div class="cefr" data-lv="4"></div><em>B2</em></div>
+        <div class="lang-row"><span>🇫🇷 <b data-i18n="lang.fr">Francés</b></span><div class="cefr" data-lv="2"></div><em>A2</em></div>
+        <p class="cefr-key"><span>A1</span><span>A2</span><span>B1</span><span>B2</span><span>C1</span><span>C2</span><span data-i18n="lang.nat">Nativo</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACTO ================= -->
+<section class="contact rv" id="contacto">
+  <h2 data-i18n="ct.t">¿Hablamos?</h2>
+  <p data-i18n="ct.p">Busco unas prácticas Erasmus+ como desarrollador. Si mi perfil encaja con tu equipo, encuéntrame en GitHub.</p>
+  <div class="cta center">
+    <a class="btn btn-main btn-big" href="https://github.com/campayoo" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.23 1.88.87 2.34.67.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.66 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 8 0Z"/></svg>github.com/campayoo</a>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <span>© 2026 Pablo Campayo Viñes</span>
+  <span data-i18n="ft">Hecho a mano con HTML, CSS y JavaScript · sin plantillas</span>
+  <a href="#inicio" data-i18n="ft.top">Arriba ↑</a>
+</footer>
+
+<script src="main.js" defer></script>
+</body>
+</html>

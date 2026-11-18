@@ -234,7 +234,7 @@ kbd{font:500 13px var(--mono);min-width:28px;height:28px;padding:0 7px;display:i
 .layers span{color:var(--ink-2)}
 .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:8px}
 .gallery figure{margin:0;border-radius:8px;overflow:hidden;position:relative}
-.gallery img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;transition:transform .6s var(--ease)}
+.gallery img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;transition:transform .6s var(--ease)}
 .gallery figure:hover img{transform:scale(1.05)}
 .gallery figcaption{position:absolute;left:8px;bottom:8px;background:#16181dcc;color:#fff;font-size:12.5px;font-weight:600;padding:2px 8px;border-radius:4px}
 .note{border-left:3px solid var(--acc);padding:4px 0 4px 16px;color:var(--ink)}

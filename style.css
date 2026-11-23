@@ -157,6 +157,18 @@ html[lang="es"] .en,html[lang="en"] .es{display:none!important}
 .p-ucl{--acc:#2346d8;--acc-2:#0b1e5b;--acc-ink:#1b3bb8}
 .p-ods{--acc:#13a06f;--acc-2:#0b3b2c;--acc-ink:#0b7a54}
 .p-con{--acc:#1f9d5c;--acc-2:#0f1a12;--acc-ink:#157a46}
+/* Pauta (EBAU Trainer): proyecto destacado, ocupa toda la fila */
+.p-pau{--acc:#1d3a8a;--acc-2:#14275e;--acc-ink:#1d3a8a}
+.p-pau .p-hero{background:#14275e}
+.proj.wide{grid-column:1/-1}
+.proj .badge-new{display:inline-block;align-self:flex-start;font-size:12.5px;font-weight:700;color:var(--acc-ink);background:color-mix(in srgb,var(--acc) 12%,#fff);border-radius:5px;padding:3px 9px;margin-bottom:10px}
+.proj h3 small{font-size:.62em;font-weight:600;color:var(--ink-3);margin-left:6px}
+@media (min-width:900px){
+  .proj.wide{flex-direction:row}
+  .proj.wide .art{flex:0 0 54%;aspect-ratio:auto;min-height:100%}
+  .p-pau.wide .art img{object-position:50% 50%}
+  .proj.wide .body{padding:30px 32px}
+}
 code{font:500 .9em var(--mono);background:var(--bg-2);padding:1px 5px;border-radius:4px}
 
 /* contacto */

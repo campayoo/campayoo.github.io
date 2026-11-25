@@ -297,3 +297,5 @@ kbd{font:500 13px var(--mono);min-width:28px;height:28px;padding:0 7px;display:i
   .meter i{transform:scaleX(var(--w))}.skill::before,.js .side h2::after{transform:none}
   html{scroll-behavior:auto}
 }
+
+.doc figure.pic{margin:6px 0 18px}.doc figure.pic img{display:block;width:100%;height:auto;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.18)}.doc figure.pic figcaption{margin-top:8px;font-size:.88rem;opacity:.72}
